@@ -1,6 +1,6 @@
-# base_project
+# Flutter Base Projet
 
-A new Flutter project.
+Bir Flutter projesi geliştirme sürecinde ihtiyacınız olan ana proje katmanlarını barındıran bir proje.
 
 ## Getting Started
 
