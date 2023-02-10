@@ -1,16 +1,11 @@
 # Flutter Base Projet
 
-Bir Flutter projesi geliştirme sürecinde ihtiyacınız olan ana proje katmanlarını barındıran bir proje.
+- Bir Flutter projesi geliştirme sürecinde ihtiyacınız olan çoğu mimarisel faktöre ulaşabileceğiniz bir proje.
+-  Bu yapıları projenize dahil ettikten sonra genel hatlarıyla yapmanız gereken yalnızca sayfa tasarımlarıyla ve businesslarıyla uğraşmak kalıyor.
+-  Proje Katmanları => Base Katmanı - Constants(Uygulama Sabitleri) - Extensions - Init
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Proje Katmanları
+ 1-) Base Katmanı =>
+ - Projeden projeye taşınabilir. İçinde bulundurduğu yapılar her projede sorunsuz kullanılabilir.
+ - MVVM mimarisine göre yapılan bir projede bulunan Model-View-ViewModel katmanlarının base yapılarını buradan oluştururuz.
+ 
