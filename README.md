@@ -1,6 +1,7 @@
 # Flutter Base Project
 
-- Bir Flutter projesi geliştirme sürecinde ihtiyacınız olan çoğu mimarisel faktöre ulaşabileceğiniz bir proje.
+
+-  Bir Flutter projesi geliştirme sürecinde ihtiyacınız olan çoğu mimarisel faktöre ulaşabileceğiniz bir proje.
 -  Bu yapıları projenize dahil ettikten sonra genel hatlarıyla yapmanız gereken yalnızca sayfa tasarımlarıyla ve businesslarıyla uğraşmak kalıyor.
 -  Proje Katmanları => Base Katmanı - Constants(Uygulama Sabitleri) - Extensions - Init
 
@@ -56,4 +57,5 @@
   - theme => uygulama içi theme yönetiminin sağlanmasına yarar.
   
 # View Base  
+- Proje Katmanları kısmında belirtilen mimari geliştirme süreçlerini tamamladıktan sonra genel olarak sayfa çizimlerine, view'ların içlerini doldurmaya başlayabiliriz.
  
