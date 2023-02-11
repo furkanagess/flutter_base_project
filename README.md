@@ -78,3 +78,6 @@
      - onPageBuilder => Artık sayfamızın çizimine başladığımız kısımdır.
   
 ![view_template](https://user-images.githubusercontent.com/92018394/218277912-a1b5a500-c7c6-4866-b4fe-0c3838792bd6.png )
+
+  # Dipnot
+     -Bu konuların çoğunu öğrenmemde katkısı olan HardwareAndro Youtube Kanalına => https://www.youtube.com/@HardwareAndro ve bu eğitimleri veren Veli Bacık'a teşekkürler => https://github.com/VB10
