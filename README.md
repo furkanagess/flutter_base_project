@@ -3,7 +3,7 @@
 
 -  This is a project template that includes several libraries to help in the development process of a Flutter project using the MVVM architecture. The template includes different layers such as base, constants, extensions, init, and view-model base. It also includes libraries for state management, localization, cache, network, and serialization, among others. The template has predefined code for building views and view-models, making it easier for developers to focus on page designs and business logic.
 
-# Flutter Base Project Kütüphaneleri
+# Flutter Base Project Libraries
 - State Management
   - mobx => https://pub.dev/packages/mobx
   - flutter_mobx => https://pub.dev/packages/flutter_mobx
@@ -23,7 +23,7 @@
 - Serializable
   - json_serializable => https://pub.dev/packages/json_serializable
 
-# Proje Katmanları
+# Project Layers
 - Base 
   - Can be moved from project to project. The structures it contains can be used smoothly in every project.
   
@@ -55,14 +55,17 @@
   - theme => used for managing the application's theme.
   
 # View-ViewModel Base  
-- Proje Katmanları kısmında belirtilen mimari geliştirme süreçlerini tamamladıktan sonra genel olarak sayfa çizimlerine, view'ların içlerini doldurmaya başlayabiliriz.
-- Bu kısımda uygulama içi view ve viewModellerimizi base katmanında yazdıgımız kodlarla entegre bir şekilde nasıl kullanabileceğimizi görüyoruz.
+- After completing the architectural development processes specified in the Project Layers section, we can start filling the views and viewModels of the application in general.
+- In this section, we see how we can use our application's views and viewModels in an integrated way with the code we wrote in the base layer.
   
    # ViewModel
-     - ViewModel kısmını yaparken öncelikle mobx snippetini kullanarak bir viewModel code generation'ı yapmaya başlıyoruz. (*Bu işlemi yaparken build_runner_watch işleminin aktif olduğunu dikkat ediniz.*)
-     - Bu işlemi gerçekleştirdikten sonra mobx_codegen bizim yerimize viewModel.g.dart klasörüne generate kodlarımızı yazmaya başlıyor
-     - View Modelimizi geliştirirken base kısmıdna yaptığımız base_view_model'i kullanıyoruz. Bu işlem için class'ın BaseViewModel yapısından türemesi için class'a with Store, BaseViewModel yapısını ekliyoruz.
-     - Bu yapıları ekledikten sonra base_view_model'imizde bulunan setContext() ve init() fonksiyonlarımızı entegre ediyoruz.
+     - When we start to make the ViewModel section, we first start to generate a viewModel code using the mobx snippet. (*Note that build_runner_watch is active during this process.*)
+     
+     - After completing this process, mobx_codegen starts writing the generated codes to the viewModel.g.dart folder on our behalf.
+     
+     - While developing our ViewModel, we use the base_view_model we made in the base section. For this process, we add the class with Store, BaseViewModel structure to the class to derive it from the BaseViewModel class.
+     
+     - After adding these structures, we integrate our setContext() and init() functions from our base_view_model."
      
   ![view-model-sample](https://user-images.githubusercontent.com/92018394/218278150-b6426b43-3f7b-4bc6-b82a-15a0da24c718.png)
 
