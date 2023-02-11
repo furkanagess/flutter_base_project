@@ -71,14 +71,16 @@
 
    
    # View
-     - View kısmını doldurmaya başlarken öncelikle base kısmında geliştirdiğimiz viev_base'den faydalanıyoruz.
-     - Sayfamızı çizebilmek için return kısmına BaseView'ımızı ekliyoruz ancak bu BaseView viewModel'den türemelidir (*örn: BaseView<LoginViewModel>()*)
-     - BaseView'ı entegre ettikten sonra base_view kısmında yazmış olduğumuz kodları burada doldurmaya başlıyoruz
-     - viewModel => Çizdiğimiz sayfanın yukarıda nasıl entegre edilmesi gerektiğini anlattığım viewModel'ini veriyoruz.
-     - onModelReady => Verdiğimiz modelin context etkileşimini kontrol ediyoruz.
-     - onPageBuilder => Artık sayfamızın çizimine başladığımız kısımdır.
+     - When starting to fill the View section, we first utilize the view_base we developed in the base section.
+     - To draw our page, we add our BaseView to the return section, but this BaseView must be derived from the viewModel (e.g.: BaseView<LoginViewModel>())
+     - After integrating the BaseView, we start filling in the code we wrote in the base_view section here.
+ 
+     - viewModel => We give the viewModel of the page we drew as explained above.
+     - onModelReady => We control the context interaction of the model we gave.
+     - onPageBuilder => This is the section where we start drawing our page.
   
   ![view_template](https://user-images.githubusercontent.com/92018394/218277912-a1b5a500-c7c6-4866-b4fe-0c3838792bd6.png )
 
-  # Dipnot
-     - Bu konuların çoğunu öğrenmemde katkısı olan HardwareAndro Youtube Kanalına => https://www.youtube.com/@HardwareAndro ve bu eğitimleri veren Veli Bacık'a teşekkürler => https://github.com/VB10
+  # Credits
+     - Thanks to HardwareAndro YouTube Channel => https://www.youtube.com/@HardwareAndro
+     - Thanks to Veli Bacık who provides these trainings for contributing to my learning on these topics. => https://github.com/VB10
