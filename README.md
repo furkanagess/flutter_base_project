@@ -1,9 +1,7 @@
 # Flutter Base Project
 
 
--  Bir Flutter projesi geliştirme sürecinde ihtiyacınız olan çoğu mimarisel faktöre ulaşabileceğiniz bir proje.
--  Bu yapıları projenize dahil ettikten sonra genel hatlarıyla yapmanız gereken yalnızca sayfa tasarımlarıyla ve businesslarıyla uğraşmak kalıyor.
--  *Projede mimarisel olarak MVVM yaklaşımı kullanılmıştır*
+-  This is a project template that includes several libraries to help in the development process of a Flutter project using the MVVM architecture. The template includes different layers such as base, constants, extensions, init, and view-model base. It also includes libraries for state management, localization, cache, network, and serialization, among others. The template has predefined code for building views and view-models, making it easier for developers to focus on page designs and business logic.
 
 # Flutter Base Project Kütüphaneleri
 - State Management
@@ -27,34 +25,34 @@
 
 # Proje Katmanları
 - Base 
-  - Projeden projeye taşınabilir. İçinde bulundurduğu yapılar her projede sorunsuz kullanılabilir.
+  - Can be moved from project to project. The structures it contains can be used smoothly in every project.
   
-  - MVVM mimarisine göre yapılan bir projede bulunan Model-View-ViewModel katmanlarının base yapılarını buradan oluştururuz.
+  - In a project based on MVVM architecture, we create the base structures of Model-View-ViewModel layers from here.
  
 - Constants 
-  - Uygulama içerisinde değişmeyecek olan uygulamanın başından sonuna sabit bir şekilde kullanılabilecek değerlerin tutulduğu klasördür.
+  - Folder where values that will not change throughout the application and can be used from start to finish are kept.
   
-  - Uygulama içi Path'ler, Enum değerleri, Image sabitleri, Navigation path'lerinin kullanacagı Navigation isimleri tutulur.
+  - Includes Navigation names that will be used by application Path, Enum values, Image constants, Navigation paths.
   
 - Extensions
-  - Uygulama içinde projenin her alanında kullanılabilecek, temiz kod mentalitesi açısından oldukça önemlidir extensionlar.
+  - Extensions that can be used in every part of the project in terms of clean code mentality are essential.
 
-  - context_extension => uygulama içerisinde width, height değerleri ; padding değerleri, duration değerlerinin tutulduğu yerdir.
+  - context_extension => the place where values such as width, height, padding, and duration are kept within the application.
   
 - Init
-  - Bir mobil uygulama için oldukça önemli olan cache, lang, navigation, network, notifier, theme gibi başlıkların kontrolünün sağlandığı yerdir.
+  - The place where important controls such as cache, lang, navigation, network, notifier, and theme are managed for a mobile application.
   
-  - cache => locale manager içerir bu kısımdan uygulama içi cache yönetimi sağlanır
+  - cache => contains locale manager for managing application cache in this section.
   
-  - lang => language manager içerir bu kısımda Localization yapılır. Localization sağlanması için assets/lang'in altına en-US.json, tr-TR.json gibi localization      sağlanacak dillerin klasörlenmesi gerekir. Bu klasörlerde yapılan her bir değişiklikten sonra " flutter pub run easy_localization:generate  -O lib/core/init/lang -f keys -o locale_keys.g.dart -S assets/lang " kodu terminale yazılmalıdır.
+  - lang => contains language manager for localization. For localization, the languages that will be localized should be put into folders such as en-US.json, tr-TR.json under assets/lang. After any changes made in these folders, the command "flutter pub run easy_localization:generate -O lib/core/init/lang -f keys -o locale_keys.g.dart -S assets/lang" should be written in the terminal.
   
-  - navigation => navigation service'in ve navigation route'larının sağlandığı yerdir.
+  - navigation => the place where navigation service and navigation routes are provided.
   
-  - network => dio kullanılarak web sitelerinden api çekme işlemlerinin gerçekleştirilmesini yönetmek amacıyla kullanılır
+  - network => used for managing web scraping operations from websites using Dio
   
-  - notifier => theme notifier ile dark ve light theme arasında theme değişikliğinin yönetilmesini sağlar.
+  - notifier =>  manages theme changes between dark and light themes with theme notifier.
   
-  - theme => uygulama içi theme yönetiminin sağlanmasına yarar.
+  - theme => used for managing the application's theme.
   
 # View-ViewModel Base  
 - Proje Katmanları kısmında belirtilen mimari geliştirme süreçlerini tamamladıktan sonra genel olarak sayfa çizimlerine, view'ların içlerini doldurmaya başlayabiliriz.
