@@ -56,6 +56,25 @@
   
   - theme => uygulama içi theme yönetiminin sağlanmasına yarar.
   
-# View Base  
+# View-ViewModel Base  
 - Proje Katmanları kısmında belirtilen mimari geliştirme süreçlerini tamamladıktan sonra genel olarak sayfa çizimlerine, view'ların içlerini doldurmaya başlayabiliriz.
- 
+- Bu kısımda uygulama içi view ve viewModellerimizi base katmanında yazdıgımız kodlarla entegre bir şekilde nasıl kullanabileceğimizi görüyoruz.
+  
+   # ViewModel
+     - ViewModel kısmını yaparken öncelikle mobx snippetini kullanarak bir viewModel code generation'ı yapmaya başlıyoruz. (*Bu işlemi yaparken build_runner_watch işleminin aktif olduğunu dikkat ediniz.*)
+     - Bu işlemi gerçekleştirdikten sonra mobx_codegen bizim yerimize viewModel.g.dart klasörüne generate kodlarımızı yazmaya başlıyor
+     - View Modelimizi geliştirirken base kısmıdna yaptığımız base_view_model'i kullanıyoruz. Bu işlem için class'ın BaseViewModel yapısından türemesi için class'a with Store, BaseViewModel yapısını ekliyoruz.
+     - Bu yapıları ekledikten sonra base_view_model'imizde bulunan setContext() ve init() fonksiyonlarımızı entegre ediyoruz.
+     
+  ![view-model-sample](https://user-images.githubusercontent.com/92018394/218278150-b6426b43-3f7b-4bc6-b82a-15a0da24c718.png)
+
+   
+   # View
+     - View kısmını doldurmaya başlarken öncelikle base kısmında geliştirdiğimiz viev_base'den faydalanıyoruz.
+     - Sayfamızı çizebilmek için return kısmına BaseView'ımızı ekliyoruz ancak bu BaseView viewModel'den türemelidir (*örn: BaseView<LoginViewModel>()*)
+     - BaseView'ı entegre ettikten sonra base_view kısmında yazmış olduğumuz kodları burada doldurmaya başlıyoruz
+     - viewModel => Çizdiğimiz sayfanın yukarıda nasıl entegre edilmesi gerektiğini anlattığım viewModel'ini veriyoruz.
+     - onModelReady => Verdiğimiz modelin context etkileşimini kontrol ediyoruz.
+     - onPageBuilder => Artık sayfamızın çizimine başladığımız kısımdır.
+  
+![view_template](https://user-images.githubusercontent.com/92018394/218277912-a1b5a500-c7c6-4866-b4fe-0c3838792bd6.png )
