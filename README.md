@@ -54,4 +54,6 @@
   - notifier => theme notifier ile dark ve light theme arasında theme değişikliğinin yönetilmesini sağlar.
   
   - theme => uygulama içi theme yönetiminin sağlanmasına yarar.
+  
+# View Base  
  
