@@ -80,6 +80,8 @@
      - onPageBuilder => This is the section where we start drawing our page.
   
   ![view_template](https://user-images.githubusercontent.com/92018394/218277912-a1b5a500-c7c6-4866-b4fe-0c3838792bd6.png )
+  
+  # Publish to Android
 
   # Credits
      - Thanks to HardwareAndro YouTube Channel => https://www.youtube.com/@HardwareAndro
