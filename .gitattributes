@@ -1,2 +1,4 @@
-* linguist-vendored
-*.cmake linguist-vendored=false
+*.dart linguist-detectable=true
+*.cmake linguist-detectable=false
+*.cpp linguist-detectable=false
+*.html linguist-detectable=false
