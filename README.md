@@ -3,6 +3,12 @@
 
 -  This is a project template that includes several libraries to help in the development process of a Flutter project using the MVVM architecture. The template includes different layers such as base, constants, extensions, init, and view-model base. It also includes libraries for state management, localization, cache, network, and serialization, among others. The template has predefined code for building views and view-models, making it easier for developers to focus on page designs and business logic.
 
+# Entegration Steps
+  - 1-) Open the "flutter_base_project" file. (not with vscode, android studio, etc.) 
+  - 2-) Copy the 'lib', 'assets', and 'scripts' files and paste them into your own project.
+  - 3-) Integrate the libraries and assets into the "pubspec.yaml" folder.
+  - 4-) Replace the imports in the closures with your **own project name** and fix the imports.
+
 # Flutter Base Project Libraries
 - State Management
   - mobx => https://pub.dev/packages/mobx
@@ -82,6 +88,7 @@
   ![view_template](https://user-images.githubusercontent.com/92018394/218277912-a1b5a500-c7c6-4866-b4fe-0c3838792bd6.png )
   
   # Publish to Android
+
 
   # Credits
      - Thanks to HardwareAndro YouTube Channel => https://www.youtube.com/@HardwareAndro
