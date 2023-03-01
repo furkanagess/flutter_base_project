@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:base_project/core/constants/navigation/navigation_constants.dart';
+
+import '../../constants/navigation/navigation_constants.dart';
 
 class NavigationRoute {
   static NavigationRoute? _instance;
@@ -14,11 +15,11 @@ class NavigationRoute {
     switch (args.name) {
       case NavigationConstants.ONBOARD:
         return normalNavigate(
-          Scaffold(),
+          const Scaffold(),
         );
     }
     return MaterialPageRoute(
-      builder: (context) => Scaffold(
+      builder: (context) => const Scaffold(
         body: Text("NOT FOUND"),
       ),
     );

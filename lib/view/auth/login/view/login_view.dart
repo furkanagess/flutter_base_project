@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:base_project/core/base/view/base_view.dart';
-import 'package:base_project/view/auth/login/viewModel/login_view_model.dart';
+
+import '../../../../core/base/view/base_view.dart';
+import '../viewModel/login_view_model.dart';
 
 class LoginView extends StatelessWidget {
   const LoginView({super.key});
@@ -12,7 +13,7 @@ class LoginView extends StatelessWidget {
       onModelReady: (model) {
         model.setContext(context);
       },
-      onPageBuilder: (context, value) => Scaffold(),
+      onPageBuilder: (context, value) => const Scaffold(),
     );
   }
 }

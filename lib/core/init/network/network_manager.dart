@@ -1,6 +1,7 @@
 import 'package:dio/dio.dart';
-import 'package:base_project/core/constants/enums/locale_keys_enum.dart';
-import 'package:base_project/core/init/cache/locale_manager.dart';
+
+import '../../constants/enums/locale_keys_enum.dart';
+import '../cache/locale_manager.dart';
 
 class NetworkManager {
   static NetworkManager? _instance;

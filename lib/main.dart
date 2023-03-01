@@ -1,13 +1,14 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:base_project/core/constants/app/app_constants.dart';
-import 'package:base_project/core/init/cache/locale_manager.dart';
-import 'package:base_project/core/init/lang/language_manager.dart';
-import 'package:base_project/core/init/navigation/navigation_router.dart';
-import 'package:base_project/core/init/navigation/navigation_service.dart';
-import 'package:base_project/core/init/notifier/app_provider.dart';
-import 'package:base_project/core/init/notifier/theme_notifier.dart';
+
+import 'core/constants/app/app_constants.dart';
+import 'core/init/cache/locale_manager.dart';
+import 'core/init/lang/language_manager.dart';
+import 'core/init/navigation/navigation_router.dart';
+import 'core/init/navigation/navigation_service.dart';
+import 'core/init/notifier/app_provider.dart';
+import 'core/init/notifier/theme_notifier.dart';
 
 void main() {
   LocaleManager.prefrencesInit();
@@ -18,7 +19,7 @@ void main() {
         supportedLocales: LanguageManager.instance.supportedLocales,
         path: ApplicationConstants.LANG_ASSET_PATH,
         startLocale: LanguageManager.instance.enLocale,
-        child: MyApp(),
+        child: const MyApp(),
       ),
     ),
   );
@@ -37,7 +38,7 @@ class MyApp extends StatelessWidget {
       onGenerateRoute: NavigationRoute.instance.generateRoute,
       navigatorKey: NavigationService.instance.navigatorKey,
       theme: context.watch<ThemeNotifier>().currentTheme,
-      home: Scaffold(),
+      home: const Scaffold(),
     );
   }
 }
