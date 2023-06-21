@@ -8,7 +8,7 @@ import 'product/lang/language_manager.dart';
 import 'product/navigation/navigation_router.dart';
 import 'product/navigation/navigation_service.dart';
 import 'product/notifier/app_provider.dart';
-import 'product/notifier/theme_notifier.dart';
+import 'product/theme/theme_notifier.dart';
 
 void main() {
   LocaleManager.prefrencesInit();
