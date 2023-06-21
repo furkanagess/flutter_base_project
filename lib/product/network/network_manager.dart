@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
 
-import '../../constants/enums/locale_keys_enum.dart';
+import '../constants/enums/locale_keys_enum.dart';
 import '../cache/locale_manager.dart';
 
 class NetworkManager {
@@ -11,11 +11,11 @@ class NetworkManager {
   }
 
   NetworkManager._init() {
-    final baseOptions = BaseOptions(
-      baseUrl: 'https://jsonplaceholder.typicode.com/',
-      headers: {
-        'val': LocaleManager.instance.getStringValue(PreferencesKeys.TOKEN),
-      },
-    );
+    // final baseOptions = BaseOptions(
+    //   baseUrl: 'https://jsonplaceholder.typicode.com/',
+    //   headers: {
+    //     'val': LocaleManager.instance.getStringValue(PreferencesKeys.TOKEN),
+    //   },
+    // );
   }
 }

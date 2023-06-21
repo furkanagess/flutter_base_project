@@ -2,7 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
-import '../init/theme/app_theme_light.dart';
+import '../theme/app_theme_light.dart';
 
 // MEDIA
 extension ContextExtension on BuildContext {

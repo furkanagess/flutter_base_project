@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../constants/navigation/navigation_constants.dart';
+import '../constants/navigation/navigation_constants.dart';
 
 class NavigationRoute {
   static NavigationRoute? _instance;
